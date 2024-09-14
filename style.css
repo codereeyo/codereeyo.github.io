@@ -1,0 +1,643 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+/* HEADER NAVIGATION */
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.navbar{
+    max-width: 1540px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 2%;
+}
+
+.navbar .logo{
+    font-size: 28px;
+    letter-spacing: 0.5rem;
+    font-weight: 900;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.navbar .logo a{
+    color: black;
+    position: relative;
+}
+
+@media screen and (min-width: 1023px){
+    .navbar .logo a::before{
+        content: "REEYO";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+        color: rgb(133, 35, 224);
+        /* border-right: 4px solid rgb(133, 35, 224); */
+        transition: 0.3s ease-in-out;
+    }
+    .navbar .logo a:hover::before{
+        width: 100%;
+    }
+} 
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar li{
+    margin: 0px 20px;
+}
+
+.navbar ul li a{
+    color: black;
+    font-weight: 600;
+    position: relative;
+}
+
+.navbar ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(133, 35, 224);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover:after{
+    width: 100%;
+}
+
+.navbar #menu{
+    font-size: 30px;
+    display: none;
+}
+
+/* HERO BANNER */
+
+.hero-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 170px 0 100px;
+    max-width: 1240px;
+    margin: auto;
+    /* background-color: #f5f5f5; */
+}
+.hero-banner .left-column{
+    width: 40%;
+}
+
+.hero-banner .left-column h1{
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.hero-banner .left-column p{
+    width: 85%;
+    line-height: 1.5rem;
+}
+
+.hero-banner .right-column img{
+    height: 280px;
+    width: 280px;
+    box-shadow: 0 5px 5px 5px rgba(133, 35, 224, 0.2);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+    0%, 100%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+}
+
+.line-break hr{
+    border: 1px solid black;
+    width: 50%;
+    margin: 0px auto 20px;
+    
+}
+
+/* HERO BANNER BOTTOM */
+
+.hero-banner-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 70px;
+}
+.hero-banner-bottom p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 50px;
+    /* display: flex; */
+    align-items: center;
+}
+.hero-banner-bottom ul{
+    display: flex;
+    align-items: center;
+}
+
+.hero-banner-bottom ul li {
+    font-size: 36px;
+    margin: 0 20px;
+    transition: 0.3s ease all;
+}
+.hero-banner-bottom ul li:hover{
+    transform: translateY(-7px);
+}
+.hero-banner-bottom ul li img{
+    width: 90px;
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+}
+
+/* ABOUT ME */
+
+.about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0 100px;
+    max-width: 1240px;
+    margin: auto;
+    /* background-color: #f5f5f5; */
+}
+.about-me .left-column{
+    width: 40%;
+}
+.about-me .right-column{
+    width: 30%;
+}
+.about-me .right-column h4{
+    color: rgb(133, 35, 224);
+}
+.about-me .right-column h2{
+    padding: 10px 0;
+}
+.about-me .right-column p{
+    line-height: 1.5rem;
+}
+
+.about-me .left-column img{
+    width: 390px;
+    height: 230px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.32);
+}
+
+/* WORK PROJECTS */
+
+.projects{
+    padding: 100px 0;
+}
+.projects .work-projects{
+    max-width: 1240px;
+    margin: 0 22.5%;
+}
+.projects .work-projects h4{
+    color: rgb(133, 35, 224);
+}
+.projects .work-projects h2{
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+/* swiper JS */
+.swiper {   
+    width: 80%;
+  } 
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.projects h3{
+    padding-bottom: 10px;
+}
+
+
+.projects .proj-container-image-left{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1240px;
+    margin: auto;
+}
+.proj-container-image-left .image-left-col{
+    width: 50%;
+    height: 100%;
+}
+.proj-container-image-left .image-left-col .mySwiper{
+    margin: auto;
+}
+.proj-container-image-left .content-right-col{
+    width: 30%;
+}
+
+.projects .proj-container-image-right{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1240px;
+    margin: auto;
+}
+.proj-container-image-right .content-left-col{
+    width: 30%;
+    height: 100%;
+}
+.proj-container-image-right .content-left-col .mySwiper{
+    margin: auto;
+}
+.projects .image-right-col{
+    width: 50%;
+}
+
+
+.proj-container-image-left .content-right-col p,
+.proj-container-image-right .content-left-col p{
+    line-height: 1.5rem;
+}
+
+.projects .swiper,
+.college-req .swiper{
+    padding-bottom: 30px;
+}
+
+/* live demo */
+section h5{
+    padding-top: 20px;
+    text-align: center;
+    transition: 0.3s ease all;
+}
+section h5:hover{
+    transform: translateX(5px);
+}
+section h5 a{
+    color: black;
+    font-size: 18px;
+    transition: 0.3s ease all;
+}
+section h5 a:hover{
+    color: #026791;
+}
+
+/* COLLEGE PROJECTS */
+
+.college-req{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 1240px;
+    margin: auto;
+}
+
+.college-req h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.college-req h5{
+    position: absolute;
+    right: 15px;
+    bottom: 45px;
+    z-index: 1;
+}
+
+.college-req h5 i{
+    font-size: 20px;
+    background-color: rgb(133, 35, 224);
+    color: wheat;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.college-req h5 i:hover{
+    background-color: black;
+    color: wheat;
+}
+
+.college-req .requirements.box{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.college-req .swiper{
+    cursor: pointer;
+}
+
+/* CONTACT ME */
+
+/* section 4 */
+
+.contact{
+    padding: 100px 0;
+    max-width: 1240px;
+    margin: auto;
+    /* background-color: #f5f5f5; */
+}
+.contact .contact-row1 h4{
+    color: rgb(133, 35, 224);
+    margin: 0 100px;
+}
+.contact .contact-row1 h2{
+    padding: 10px 0 50px;
+    margin: 0 100px;
+}
+.contact .contact-row1 .icon-list-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact .contact-row1 .icon-list{
+    display: flex;
+    align-items: center;   
+}
+.contact .contact-row1 .icon-list .fa-solid{
+    font-size: 26px;
+}
+.contact .contact-row1 .icon-list p{
+    padding-left: 10px;
+}
+.contact .line-break hr{
+    border: 1px solid black;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* FOOTER */
+
+.footer{
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 40px;
+}
+
+.footer p{
+    font-weight: 400;
+}
+
+/* fontAwesome */
+
+.fa-download{
+    padding-left: 10px;
+}
+.fa-hand-point-right{
+    padding-left: 5px;
+}
+
+/* emojis */
+
+.emoji{
+    font-size: 26px;
+}
+
+.sub-emoji-ojt,
+.sub-emoji-despro{
+    padding-left: 10px;
+}
+
+/* RESPONSIVENESS (TABLET) */
+
+@media screen and (max-width: 1100px){
+    .about-me .left-column img{
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .about-me .left-column img{
+        width: 390px;
+        height: 230px;
+    }
+    .hero-banner .left-column h1{
+        font-size: 24px;
+    }
+    .line-break hr{
+        width: 70%;
+        
+    }
+    .about-me{
+        flex-direction: column;
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .about-me .left-column{
+        display: flex;
+        justify-content: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .about-me .right-column{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 20px;
+    }
+    .projects .work-projects{
+        margin: 0 5%;
+    }
+}
+
+/* RESPONSIVENESS (MOBILE) */
+
+@media screen and (max-width: 767px){
+    .navbar{
+        padding: 40px 4%;
+    }
+    .navbar #menu{
+        display: block;
+    }
+    .navbar ul{
+        width: 100%;
+        background-color: #f5f5f5;
+        position: absolute;
+        top: 110px;
+        right: 0;
+        z-index: 2;
+        display: block;
+        text-align: center;
+        transition: 0.5s ease;
+        overflow: hidden;
+    }
+    .navbar ul li{
+        display: block;
+        margin: 50px 50px;
+    }
+    .hero-banner{
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 170px 5% 100px;
+    }
+    .hero-banner .left-column h1{
+        font-size: 22px;
+    }
+    .hero-banner .left-column p{
+        width: 100%;
+        font-size: 16px;
+    }
+    .hero-banner .left-column{
+        width: 90%;
+    }
+    .hero-banner .right-column img{
+        width: 200px;
+        height: 200px;
+    }
+    .hero-banner-bottom{
+        padding-bottom: 0px;
+    }
+    .hero-banner-bottom p{
+        display: none;
+    }
+    .hero-banner-bottom ul li{
+        font-size: 28px;
+    }
+    .about-me{
+        flex-direction: column;
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .about-me .left-column{
+        display: flex;
+        justify-content: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .about-me .left-column img{
+        width: 360px;
+    height: 200px;
+    }
+    .about-me .right-column{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 20px;
+    }
+    .about-me .right-column h2{
+        font-size: 20px;
+    }
+    .swiper{
+        width:  100%;
+    } 
+
+    .college-req{
+        padding: 0 30px
+    }
+    .college-req .requirements.box{
+        width: 100%;
+    }
+    
+    .projects .work-projects{
+        width: 100%;
+        margin: 0 5%;
+    }
+
+    .contact .contact-row1 h4,
+    .contact .contact-row1 h2{
+        margin: 0 5%;
+    }
+
+    .projects .proj-container-image-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+   
+    .proj-container-image-left .image-left-col{
+        display: flex;
+        justify-content: center;
+        width: 100%!important;
+    }
+    .proj-container-image-left .content-right-col{
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .projects .proj-container-image-right{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .projects .image-right-col{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .proj-container-image-right .content-left-col{
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .contact .icon-list-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact .icon-list-container .icon-list{
+        padding: 10px 0px;
+    }
+    
+    
+}
+
+.swiper-wrapper img{
+    border-radius: 25px;
+}

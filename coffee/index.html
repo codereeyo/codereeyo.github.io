@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kape Panga</title>
+    <link rel="shortcut icon" href="images/kape.png">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/82dcb87ed2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#hero-banner"><img src="images/kape.png" alt=""></a></div>
+            <ul id="menuList">
+                <li><a href="#hero-banner">Home</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="call-us">  
+                <button><a href=""><i class="fa-solid fa-phone"></i>Make a Call</a></button>
+            </div>
+            <div id="menu" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+    
+    <section>
+        <div class="hero-banner" id="hero-banner">
+            <div class="left-column">
+                <h1>Discover Our <span>Coffee</span> Blends</h1>
+                <p>Indulge in our premium coffee blends, crafted with precision and care. Each sip promises a delightful experience, with flavors that captivate your senses and leave you craving more. Elevate your coffee journey with our exquisite selection today.</p>
+                <button><a href="#offers">Get Started</a></button>
+            </div>
+            <div class="right-column">
+                <img src="images/hero-coffee.png" alt="">
+            </div>
+        </div>
+
+        <div class="offers" id="offers">
+            <h6>COFFEE GROUNDS</h6>
+            <h5>PREMIUM COFFEE BEANS</h5>
+            <h2>WE PROVIDE HOMEMADE COFFEE BEANS TAILORED TO YOUR TASTE</h2>
+            <div class="offers-container">
+                <div class="image-box">
+                    <img src="images/robusta-coffee-beans.jpg" alt="">
+                    <h3>ROBUSTA COFFEE BEANS</h3>
+                    <p>Experience the bold and intense flavor of our Robusta coffee beans, renowned for their rich aroma and satisfyingly robust taste.</p>
+                </div>
+                <div class="image-box">
+                    <img src="images/arabica-coffee-beans.jpg" alt="">
+                    <h3>ARABICA COFFEE BEANS</h3>
+                    <p>Savor the smooth and aromatic essence of our Arabica coffee beans, cherished for their delicate flavors and refined quality.</p>
+                </div>
+                <div class="image-box">
+                    <img src="images/green-coffee-beans.jpg" alt="">
+                    <h3>GREEN COFFEE BEANS</h3>
+                    <p>Embark on a journey of pure potential with our green coffee beans, awaiting your unique roasting touch to unlock their vibrant flavors.</p>
+                </div>
+                <div class="image-box">
+                    <img src="images/liberica-coffee-beans.jpg" alt="">
+                    <h3>LIBERICA COFFEE BEANS</h3>
+                    <p>Discover the distinctive taste of Liberica coffee beans, celebrated for their bold flavor profile and rare, exotic essence.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-us" id="about">
+            <h6>WHO WE ARE</h6>
+            <h5>KNOW ABOUT COFFEE BLENDS</h5>
+            <h2>WE PROVIDE ALL KINDS OF COFFEE FROM ALL OVER THE WORLD</h2>
+            <div class="about-service">
+                <div class="left-column">
+                    <div class="container" style="margin-top: 80px;">
+                        <h4 style="color: #0E6904;">210+</h4>
+                        <h5>Satisfied Customers</h5>
+                    </div>
+                    <div class="container">
+                        <h4 style="color: #F5B055;">15k+</h4>
+                        <h5>Coffee <br> Served</h5>
+                    </div>
+                    <div class="container">
+                        <h4 style="color: #E3BE86;">110+</h4>
+                        <h5>Impresive Employees</h5>
+                    </div>
+                    <div class="container" style="margin-top: -80px;">
+                        <h4 style="color: #A5471D;">12+</h4>
+                        <h5>National <br> Awards</h5>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <h3>Our <span>Coffee</span> Shop's Story</h3>
+                    <p>Founded with a passion for exceptional coffee, our shop began as a dream to create a welcoming space where every cup tells a story. From humble beginnings to a beloved local destination, we're dedicated to sharing our love for coffee with our community, one sip at a time.</p>
+                </div>
+            </div>
+            <div class="about-team">
+                <h3>Meet The <span>Squad</span></h3>
+                <p>Get to know the friendly faces behind your favorite coffee experiences. Our team is fueled by passion and dedicated to bringing you the best coffee moments every day.</p>
+                <div class="team-container">
+                    <div class="image-box">
+                        <img src="images/member1.jpg" alt="">
+                        <div class="member-desc">
+                            <h4>Miguel Garcia</h4>
+                            <h5>Store Manager</h5>
+                            <div class="social-icons">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/member2.jpg" alt="">
+                        <div class="member-desc">
+                            <h4>Alejandro Cruz</h4>
+                            <h5>Barista</h5>
+                            <div class="social-icons">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/member3.jpg" alt="">
+                        <div class="member-desc">
+                            <h4>Andrea Reyes</h4>
+                            <h5>Product Assistant</h5>
+                            <div class="social-icons">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews" id="reviews">
+            <h6>CLIENT FEEDBACK</h6>
+            <h5>TESTIMONIALS</h5>
+            <h2>SOME WORDS FROM OUR CUSTOMERS</h2>
+            <div class="reviews-container">
+                <div class="customer-review">
+                    <img src="images/member3.jpg" alt="">
+                    <h4>Lorena Rivera</h4>
+                    <h5>Neuro Scientist</h5>
+                    <p>"Absolutely love this coffee shop! The atmosphere is cozy and inviting, perfect for catching up with friends or enjoying a quiet moment alone. The coffee is always superbly brewed, with a rich and smooth flavor that keeps me coming back for more. The friendly staff adds to the welcoming vibe, making this my go-to spot for my daily caffeine fix."</p>
+                </div>
+                <div class="customer-review">
+                    <img src="images/member2.jpg" alt="">
+                    <h4>Ramon Cruz</h4>
+                    <h5>Aerospace Engineer</h5>
+                    <p>"Hands down the best coffee shop in town! The quality of their coffee is unmatched, and you can really taste the difference in every sip. Whether it's a classic latte or a specialty brew, they nail it every time. Plus, the selection of pastries and snacks is fantastic, making it the perfect place to start my day or unwind in the afternoon."</p>
+                </div>
+                <div class="customer-review">
+                    <img src="images/member1.jpg" alt="">
+                    <h4>Juanito Santos</h4>
+                    <h5>Physicist</h5>
+                    <p>"I stumbled upon this gem of a coffee shop recently, and I'm so glad I did! From the moment I walked in, I was greeted with friendly smiles and a welcoming ambiance. The baristas are true artists, carefully crafting each drink. And let me tell you, their iced coffee is a game-changer! Refreshing and flavorful, it's become my new go-to drink."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-us" id="contact">
+            <h6>GET IN TOUCH</h6>
+            <h5>REACH OUT</h5>
+            <h2>WE ARE HERE TO ASSIST YOU</h2>
+            <div class="container">
+                <div class="box-container">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <h3>CAFE ADDRESS</h3>
+                    <p>Lac Ste. Anne County, AB, Canada</p>
+                </div>
+                <div class="box-container">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>EMAIL ADDRESS</h3>
+                    <p>kapepanga@gmail.com</p>
+                </div>
+                <div class="box-container">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>PHONE NUMBER</h3>
+                    <p>0912-345-6789</p>
+                </div>
+                <div class="box-container">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>OPENING HOURS</h3>
+                    <p>9:00 AM - 12:00 AM</p>
+                </div>
+            </div>
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9453.898615826585!2d-114.36218116877666!3d53.67416541924244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x539f9e34e935b5b3%3A0xa41e598b909f224d!2sAlberta%20Beach%2C%20AB%2C%20Canada!5e0!3m2!1sen!2sph!4v1707977615815!5m2!1sen!2sph" width="1240" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="inner-container">
+                <h2>About Us</h2>
+                <p>Welcome to our coffee haven! We're devoted to crafting the perfect cup for every coffee lover. From bean to brew, we pour our passion into every sip. <span>☕</span></p>
+            </div>
+            <div class="inner-container">
+                <h2>Service</h2>
+                <p>A suite of tailored services aimed at enhancing your coffee experience. From customized blends to expert brewing techniques, we're committed to delivering excellence in every cup. <span>🔑</span></p>
+            </div>
+            <div class="inner-container">
+                <h2>Socials</h2>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div> 
+        </div>
+        <hr>
+        <h3>Copyright © 2024. All rights reserved.</h2>
+    </footer>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "430px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
