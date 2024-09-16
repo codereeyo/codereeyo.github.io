@@ -147,7 +147,7 @@ header{
     border: 1px solid black;
     width: 50%;
     margin: 0px auto 20px;
-    
+    max-width: 1000px;
 }
 
 /* HERO BANNER BOTTOM */
@@ -224,10 +224,13 @@ header{
 
 .projects{
     padding: 100px 0;
+    margin: 0 auto;
+    max-width: 1240px;
 }
 .projects .work-projects{
     max-width: 1240px;
-    margin: 0 22.5%;
+    margin: 0 100px;
+    
 }
 .projects .work-projects h4{
     color: rgb(133, 35, 224);

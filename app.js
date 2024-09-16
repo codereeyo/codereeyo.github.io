@@ -28,22 +28,6 @@ document.addEventListener('DOMContentLoaded', function(){
         duration: 1000,
     }
 
-    ScrollReveal().reveal(".hero-banner .right-column", {
-        ...scrollRevealOption,
-        origin: "right",
-        duration: 1000,
-    });
-
-    ScrollReveal().reveal(".hero-banner .left-column h1", {
-        ...scrollRevealOption,
-        duration: 1500,
-    });
-
-    ScrollReveal().reveal(".hero-banner .left-column p", {
-        ...scrollRevealOption,
-        duration: 2000,
-    });
-
     ScrollReveal().reveal(".proj-container-image-left", {
         ...scrollRevealOption,
         origin: "right",
