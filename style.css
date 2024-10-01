@@ -403,7 +403,8 @@ section h5 a:hover{
     display: flex;
     align-items: center;   
 }
-.contact .contact-row1 .icon-list .fa-solid{
+.contact .contact-row1 .icon-list .fa-solid,
+.contact .contact-row1 .icon-list .fa-brands{
     font-size: 26px;
 }
 .contact .contact-row1 .icon-list p{
