@@ -645,3 +645,16 @@ section h5 a:hover{
 .swiper-wrapper img{
     border-radius: 25px;
 }
+
+
+/* class css */
+
+.size-s{
+    font-size: 24px;
+    padding: 0 10px;
+}
+
+.size-xs{
+    font-size: 24px;
+    padding: 0 5px;
+}
