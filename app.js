@@ -22,18 +22,18 @@ document.addEventListener('DOMContentLoaded', function(){
     });  
 
     // SCROLL REVEAL 
-    const scrollRevealOption = {
-        distance: "200px",
-        origin: "bottom",
-        duration: 1000,
-    }
+    // const scrollRevealOption = {
+    //     distance: "200px",
+    //     origin: "bottom",
+    //     duration: 1000,
+    // }
 
-    ScrollReveal().reveal(".proj-container-image-left", {
-        ...scrollRevealOption,
-        origin: "right",
-    });
-    ScrollReveal().reveal(".proj-container-image-right", {
-        ...scrollRevealOption,
-        origin: "left",
-    });
+    // ScrollReveal().reveal(".proj-container-image-left", {
+    //     ...scrollRevealOption,
+    //     origin: "right",
+    // });
+    // ScrollReveal().reveal(".proj-container-image-right", {
+    //     ...scrollRevealOption,
+    //     origin: "left",
+    // });
 })
