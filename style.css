@@ -52,19 +52,19 @@ header{
 }
 
 @media screen and (min-width: 1023px){
-    .navbar .logo a::before{
+    /* .navbar .logo a::before{
         content: "REEYO";
         position: absolute;
         width: 0%;
         height: 100%;
         overflow: hidden;
         color: rgb(133, 35, 224);
-        /* border-right: 4px solid rgb(133, 35, 224); */
+        border-right: 4px solid rgb(133, 35, 224);
         transition: 0.3s ease-in-out;
     }
     .navbar .logo a:hover::before{
         width: 100%;
-    }
+    } */
 } 
 
 .navbar ul{
@@ -166,6 +166,8 @@ header{
     margin-right: 50px;
     /* display: flex; */
     align-items: center;
+    border-right: 3px solid black;
+    padding-right: 15px;
 }
 .hero-banner-bottom ul{
     display: flex;
@@ -694,3 +696,13 @@ section h5 a:hover{
   .scroll-top-btn:hover {
     background-color: #AA60C8;
   }
+
+  /* border radius images */
+
+  .border-radius{
+    border-radius: 25px;
+  }
+
+
+  /* dark mode  */
+  
