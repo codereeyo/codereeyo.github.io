@@ -215,7 +215,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 150px 0 100px;
+    padding: 100px 0 100px;
     max-width: 1240px;
     margin: auto;
     /* background-color: #f5f5f5; */
@@ -357,56 +357,12 @@ section h5 a:hover{
     color: #026791;
 }
 
-/* COLLEGE PROJECTS */
-
-.college-req{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    max-width: 1240px;
-    margin: auto;
-}
-
-.college-req h3{
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.college-req h5{
-    position: absolute;
-    right: 15px;
-    bottom: 45px;
-    z-index: 1;
-}
-
-.college-req h5 i{
-    font-size: 20px;
-    background-color: rgb(133, 35, 224);
-    color: wheat;
-    padding: 20px;
-    border-radius: 50%;
-}
-
-.college-req h5 i:hover{
-    background-color: black;
-    color: wheat;
-}
-
-.college-req .requirements.box{
-    width: 50%;
-    margin-bottom: 20px;
-}
-.college-req .swiper{
-    cursor: pointer;
-}
-
 /* CONTACT ME */
 
 /* section 4 */
 
 .contact{
-    padding: 100px 0;
+    padding: 100px 0 50px;
     max-width: 1240px;
     margin: auto;
     /* background-color: #f5f5f5; */
@@ -446,7 +402,7 @@ section h5 a:hover{
 .footer{
     text-align: center;
     /* background-color: #f5f5f5; */
-    padding: 40px;
+    padding: 0 0 40px 0;
 }
 
 .footer p{
@@ -546,7 +502,7 @@ section h5 a:hover{
         justify-content: space-evenly;
         flex-direction: column-reverse;
         text-align: center;
-        padding: 170px 5% 100px;
+        padding: 100px 5% 100px;
     }
     .hero-banner .left-column h1{
         font-size: 22px;
