@@ -345,9 +345,9 @@ section h5{
     text-align: center;
     transition: 0.3s ease all;
 }
-section h5:hover{
+/* section h5:hover{
     transform: translateX(5px);
-}
+} */
 section h5 a{
     color: black;
     font-size: 18px;
