@@ -198,6 +198,7 @@ body{
     font-size: 36px;
     margin: 0 20px;
     transition: 0.3s ease all;
+    cursor: pointer;
 }
 .hero-banner-bottom ul li:hover{
     transform: translateY(-7px);
@@ -354,7 +355,8 @@ section h5 a{
     transition: 0.3s ease all;
 }
 section h5 a:hover{
-    color: #026791;
+    /* color: #026791; */
+    color: rgb(133, 35, 224);
 }
 
 /* CONTACT ME */
