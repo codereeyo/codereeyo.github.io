@@ -174,7 +174,7 @@ body{
 }
 
 .fa-circle{
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .hero-banner .left-column .essentials button{
@@ -185,6 +185,12 @@ body{
     padding: 5px 10px;
     border-radius: 25px;
     background-color: transparent;
+}
+
+.hero-banner .left-column .essentials button:hover{
+    border: 1px solid #0A66C2;
+    border-bottom: none;
+    border-left: none;
 }
 
 .hero-banner .left-column .essentials .linkedin{
